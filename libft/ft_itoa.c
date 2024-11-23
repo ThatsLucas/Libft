@@ -6,7 +6,7 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 11:29:29 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/15 11:29:33 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:01:05 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ static size_t	intlen(long *nbr)
 	return (i);
 }
 
+// Converts an integer to a string.
 char	*ft_itoa(int n)
 {
 	long	i;

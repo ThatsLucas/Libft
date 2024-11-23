@@ -6,12 +6,13 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:25:56 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/22 11:40:56 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:07:37 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Locates a substring within a string.
 char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
 	size_t	i;

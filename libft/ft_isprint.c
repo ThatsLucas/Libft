@@ -6,10 +6,11 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:49:10 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/19 16:10:57 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:01:08 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// Checks if the character is printable.
 int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);

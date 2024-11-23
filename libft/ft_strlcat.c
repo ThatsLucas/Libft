@@ -6,12 +6,14 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 14:05:41 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/21 16:30:08 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:28:36 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Concatenates two strings, 
+//ensuring the total length doesn't exceed the given size.
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dstsize;

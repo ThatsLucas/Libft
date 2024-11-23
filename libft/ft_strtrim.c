@@ -6,7 +6,7 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:13:34 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/19 16:17:24 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:07:23 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ static long	ft_findend(const char *str, char const *set)
 	return (-1);
 }
 
+// Trims specified characters from the start and end of a string.
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*trim;

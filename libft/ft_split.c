@@ -6,7 +6,7 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 13:35:01 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/23 14:29:58 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:23:38 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,20 +38,22 @@ static size_t	ft_countchar(char const *s, char c)
 	return (count);
 }
 
-static void	ft_freetab(char **tab, size_t j)
+static char	**ft_freetab(char **tab)
 {
 	size_t	i;
 
 	i = 0;
-	while (i < j)
+	while (tab[i])
 	{
 		free(tab[i]);
 		i++;
 	}
 	free(tab);
+	tab = NULL;
+	return (tab);
 }
 
-static void	ft_allocate(char **tab, char const *s, char c, size_t i)
+static char	**ft_allocate(char **tab, char const *s, char c, size_t i)
 {
 	size_t	slen;
 	size_t	y;
@@ -69,15 +71,17 @@ static void	ft_allocate(char **tab, char const *s, char c, size_t i)
 				y++;
 			tab[j] = ft_substr(s, i, y - i);
 			if (!tab[j])
-				return (ft_freetab(tab, j));
+				return (ft_freetab(tab));
 			j++;
 			i = y;
 		}
 		i++;
 	}
 	tab[j] = 0;
+	return (tab);
 }
 
+// Splits a string into an array of strings based on a delimiter.
 char	**ft_split(char const *s, char c)
 {
 	size_t	count;
@@ -87,8 +91,5 @@ char	**ft_split(char const *s, char c)
 	tab = (char **)malloc((count + 1) * sizeof(char *));
 	if (!tab)
 		return (NULL);
-	ft_allocate(tab, s, c, 0);
-	if (!tab)
-		return (NULL);
-	return (tab);
+	return (ft_allocate(tab, s, c, 0));
 }

@@ -6,12 +6,13 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 16:18:20 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/19 16:14:14 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:05:48 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Duplicates a string.
 char	*ft_strdup(const char *src)
 {
 	char	*dup;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:08:56 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/23 21:23:41 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/23 23:01:33 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	ft_isspace(int c)
 		|| (c == '\f') || (c == '\r'));
 }
 
-//Convertit une chaîne en entier.
+// Converts a string to an integer.
 int	ft_atoi(const char *str)
 {
 	long	i;

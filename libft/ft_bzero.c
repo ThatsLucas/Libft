@@ -6,12 +6,13 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 10:45:47 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/19 16:09:41 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:01:29 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Fills a memory area with zeros.
 void	ft_bzero(void *pointer, size_t count)
 {
 	unsigned char	*temp;

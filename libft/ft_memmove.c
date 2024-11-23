@@ -6,12 +6,13 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:07:44 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/22 11:41:07 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:04:25 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Moves memory safely, handling overlaps.
 void	*ft_memmove(void *destination, const void *source, size_t size)
 {
 	char		*dest;

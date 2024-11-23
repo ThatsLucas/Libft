@@ -6,12 +6,13 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 11:41:31 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/19 16:11:25 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:04:52 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Finds the first occurrence of a character in a memory area.
 void	*ft_memchr(const void *memoryBlock, int searchedChar, size_t size)
 {
 	unsigned char	*s1;

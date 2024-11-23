@@ -6,12 +6,13 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 19:43:24 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/23 09:55:39 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 22:58:17 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Maps a function to each element of a linked list and creates a new list.
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*resultlist;

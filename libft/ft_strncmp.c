@@ -6,19 +6,18 @@
 /*   By: lle-duc <lle-duc@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:41:48 by lle-duc           #+#    #+#             */
-/*   Updated: 2024/11/19 16:15:38 by lle-duc          ###   ########.fr       */
+/*   Updated: 2024/11/23 23:14:54 by lle-duc          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Compares two strings up to a given length.
 int	ft_strncmp(const char *s1, const char *s2, size_t length)
 {
-	size_t			i;
 	unsigned char	*temp1;
 	unsigned char	*temp2;
 
-	i = 0;
 	temp1 = (unsigned char *)s1;
 	temp2 = (unsigned char *)s2;
 	while (length > 0)
