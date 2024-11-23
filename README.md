@@ -1,113 +1,114 @@
 
-# Libft - Bibliothèque Standard C personnalisée
+# Libft - Custom Standard C Library
 
-La **libft** est une bibliothèque écrite en C qui implémente un ensemble de fonctions utiles souvent absentes des bibliothèques standard. Elle est conçue pour être utilisée dans divers projets nécessitant des fonctionnalités de manipulation de chaînes, de gestion de mémoire et de listes chaînées.
+**libft** is a library written in C that implements a set of useful functions often missing from the standard libraries. It is designed to be used in various projects that require string manipulation, memory management, and linked list functions.
 
-## Table des matières
-- [Fonctionnalités](#fonctionnalités)
+## Table of Contents
+- [Features](#features)
 - [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Fonctions disponibles](#fonctions-disponibles)
-  - [Partie Obligatoire](#partie-obligatoire)
+- [Usage](#usage)
+- [Available Functions](#available-functions)
+  - [Mandatory Part](#mandatory-part)
   - [Bonus](#bonus)
-- [Licence](#licence)
+- [License](#license)
 
 ---
 
-## Fonctionnalités
+## Features
 
-- Manipulation de chaînes de caractères
-- Gestion de mémoire
-- Conversion de types
-- Fonctions utilitaires pour les listes chaînées
-- Complètement conforme à la norme C89/C99 pour un usage étendu
+- String manipulation
+- Memory management
+- Type conversion
+- Utility functions for linked lists
 
 ---
 
 ## Installation
 
-Pour compiler la bibliothèque :
+To compile the library:
 ```bash
-git clone https://github.com/ton-utilisateur/libft.git
+git clone https://github.com/ThatsLucas/libft.git
 cd libft
 make
+
+make bonus
 ```
 
-Cela génère un fichier `libft.a` que vous pouvez inclure dans vos projets.
+This will generate a `libft.a` file that you can include in your projects.
 
 ---
 
-## Utilisation
+## Usage
 
-Incluez la bibliothèque dans vos fichiers `.c` en ajoutant son en-tête :
+Include the library in your `.c` files by adding its header:
 ```c
 #include "libft.h"
 ```
 
-Lors de la compilation, liez la bibliothèque statique :
+When compiling, link the static library:
 ```bash
-gcc -Wall -Wextra -Werror -o mon_programme mon_programme.c -L. -lft
+cc -Wall -Wextra -Werror main.c -L. -lft
 ```
 
 ---
 
-## Fonctions disponibles
+## Available Functions
 
-### Partie Obligatoire
+### Mandatory Part
 
-| Fonction         | Description                                            |
+| Function         | Description                                            |
 |------------------|--------------------------------------------------------|
-| `ft_isalpha`     | Vérifie si un caractère est alphabétique.              |
-| `ft_isdigit`     | Vérifie si un caractère est un chiffre.                |
-| `ft_isalnum`     | Vérifie si un caractère est alphanumérique.            |
-| `ft_isascii`     | Vérifie si un caractère est ASCII.                     |
-| `ft_isprint`     | Vérifie si un caractère est imprimable.                |
-| `ft_strlen`      | Calcule la longueur d'une chaîne.                      |
-| `ft_bzero`       | Met une zone mémoire à zéro.                           |
-| `ft_memset`      | Remplit une zone mémoire avec une valeur donnée.       |
-| `ft_memcpy`      | Copie une zone mémoire.                                |
-| `ft_memmove`     | Copie une zone mémoire en gérant les chevauchements.   |
-| `ft_strchr`      | Trouve la première occurrence d'un caractère dans une chaîne. |
-| `ft_strrchr`     | Trouve la dernière occurrence d'un caractère dans une chaîne. |
-| `ft_strncmp`     | Compare deux chaînes sur un nombre donné de caractères.|
-| `ft_strnstr`     | Trouve une sous-chaîne dans une autre.                 |
-| `ft_atoi`        | Convertit une chaîne en entier.                        |
-| `ft_strdup`      | Duplique une chaîne.                                   |
-| `ft_calloc`      | Alloue une mémoire initialisée à zéro.                 |
-| `ft_itoa`        | Convertit un entier en chaîne.                         |
-| `ft_substr`      | Extrait une sous-chaîne d'une chaîne donnée.           |
-| `ft_split`       | Divise une chaîne en fonction d'un délimiteur.         |
-| `ft_strjoin`     | Concatène deux chaînes.                                |
-| `ft_strtrim`     | Supprime les caractères inutiles au début et à la fin d'une chaîne. |
-| `ft_strmapi`     | Applique une fonction sur chaque caractère d'une chaîne.|
-| `ft_striteri`    | Applique une fonction sur chaque caractère avec son index. |
-| `ft_putchar_fd`  | Écrit un caractère sur un descripteur de fichier donné.|
-| `ft_putstr_fd`   | Écrit une chaîne sur un descripteur de fichier donné.  |
-| `ft_putendl_fd`  | Écrit une chaîne suivie d'un retour à la ligne sur un descripteur de fichier. |
-| `ft_putnbr_fd`   | Écrit un entier sur un descripteur de fichier donné.   |
+| `ft_isalpha`     | Checks if a character is alphabetic.                   |
+| `ft_isdigit`     | Checks if a character is a digit.                      |
+| `ft_isalnum`     | Checks if a character is alphanumeric.                 |
+| `ft_isascii`     | Checks if a character is ASCII.                        |
+| `ft_isprint`     | Checks if a character is printable.                    |
+| `ft_strlen`      | Calculates the length of a string.                     |
+| `ft_bzero`       | Sets a memory area to zero.                            |
+| `ft_memset`      | Fills a memory area with a specified value.            |
+| `ft_memcpy`      | Copies a memory area.                                  |
+| `ft_memmove`     | Copies a memory area, handling overlaps.               |
+| `ft_strchr`      | Finds the first occurrence of a character in a string. |
+| `ft_strrchr`     | Finds the last occurrence of a character in a string.  |
+| `ft_strncmp`     | Compares two strings up to a specified number of characters. |
+| `ft_strnstr`     | Finds a substring within a string.                     |
+| `ft_atoi`        | Converts a string to an integer.                       |
+| `ft_strdup`      | Duplicates a string.                                   |
+| `ft_calloc`      | Allocates memory and initializes it to zero.           |
+| `ft_itoa`        | Converts an integer to a string.                       |
+| `ft_substr`      | Extracts a substring from a given string.              |
+| `ft_split`       | Splits a string based on a delimiter.                  |
+| `ft_strjoin`     | Concatenates two strings.                              |
+| `ft_strtrim`     | Removes unnecessary characters from the beginning and end of a string. |
+| `ft_strmapi`     | Applies a function to each character of a string.      |
+| `ft_striteri`    | Applies a function to each character with its index.   |
+| `ft_putchar_fd`  | Writes a character to a file descriptor.               |
+| `ft_putstr_fd`   | Writes a string to a file descriptor.                  |
+| `ft_putendl_fd`  | Writes a string followed by a newline to a file descriptor. |
+| `ft_putnbr_fd`   | Writes an integer to a file descriptor.                |
 
 ### Bonus
 
-| Fonction          | Description                                           |
+| Function          | Description                                           |
 |-------------------|-------------------------------------------------------|
-| `ft_lstnew`       | Crée un nouvel élément de liste chaînée.              |
-| `ft_lstadd_front` | Ajoute un élément au début de la liste chaînée.       |
-| `ft_lstsize`      | Calcule le nombre d'éléments dans une liste chaînée.  |
-| `ft_lstlast`      | Retourne le dernier élément d'une liste chaînée.      |
-| `ft_lstadd_back`  | Ajoute un élément à la fin de la liste chaînée.       |
-| `ft_lstdelone`    | Supprime un élément de la liste chaînée.              |
-| `ft_lstclear`     | Supprime tous les éléments d'une liste chaînée.       |
-| `ft_lstiter`      | Applique une fonction sur chaque élément d'une liste chaînée. |
-| `ft_lstmap`       | Crée une nouvelle liste en appliquant une fonction sur chaque élément. |
+| `ft_lstnew`       | Creates a new linked list element.                    |
+| `ft_lstadd_front` | Adds a new element to the front of the list.          |
+| `ft_lstsize`      | Returns the size of the linked list.                  |
+| `ft_lstlast`      | Returns the last element of the linked list.          |
+| `ft_lstadd_back`  | Adds a new element to the back of the list.           |
+| `ft_lstdelone`    | Deletes a specific element from the list.             |
+| `ft_lstclear`     | Clears all elements from the list.                    |
+| `ft_lstiter`      | Applies a function to each element of the list.       |
+| `ft_lstmap`       | Creates a new list by applying a function to each element of the old list. |
 
 ---
 
-## Licence
+## License
 
-Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le distribuer.
+This project is licensed under the MIT License. You are free to use, modify, and distribute it.
 
 ---
 
-## Crédits
+## Credits
 
-Ce projet a été réalisé dans le cadre de ma formation, en suivant les standards du projet **Libft** de 42.
+This project was created as part of my training, following the standards of the **Libft** project at 42.
